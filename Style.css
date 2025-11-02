@@ -1,0 +1,202 @@
+.logo {
+  max-width: 200px;
+  margin: 10px auto;
+  display: block;
+}
+
+.inicio:hover {
+  text-decoration: none;
+}
+
+.inicio:hover {
+  text-decoration: none;
+}
+.MenuPrincipal {
+  width: 100%;
+  background-color: #0282fa;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
+  padding: 10px;
+  position: relative;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  margin: 10px;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 10px 0;
+  position: relative;
+  flex-direction: row;
+}
+
+.MenuPrincipal a {
+  color: white;
+  text-decoration: none;
+  font-family: Impact, Arial;
+  font-size: 20px;
+}
+.MenuPrincipal a:hover {
+  color: #7bb8ec;
+  text-decoration: underline;
+}
+.ListaSemestres {
+  position: relative;
+}
+
+.ListaSemestres .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0282fa;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 100;
+}
+
+.ListaSemestres:hover .submenu {
+  display: block;
+}
+
+.submenu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+
+.submenu li a:hover {
+  background-color: #0066c2;
+  border-radius: 4px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .menu-items.active {
+    display: flex;
+  }
+
+  .ListaSemestres .submenu {
+    position: static;
+    background-color: #0282fa;
+  }
+
+  .ListaSemestres:hover .submenu {
+    display: none;
+  }
+
+  .ListaSemestres.open .submenu {
+    display: block;
+  }
+
+  .submenu li a {
+    color: white;
+  }
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  max-width: 80px;
+}
+
+.top-bar {
+  background-color: #0282fa;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #0282fa;
+  color: white;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 25px;
+  float: right;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.submenu {
+  display: none;
+  padding-left: 15px;
+}
+
+.submenu-item.open .submenu {
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 999;
+}
