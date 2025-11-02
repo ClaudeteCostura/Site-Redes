@@ -103,7 +103,7 @@
 
   .ListaSemestres .submenu {
     position: static;
-    background-color: #0282fa;
+    background-color: #fa0202;
   }
 
   .ListaSemestres:hover .submenu {
@@ -130,7 +130,7 @@ body {
 }
 
 .top-bar {
-  background-color: #0282fa;
+  background-color: #fa0202;
   color: white;
   display: flex;
   align-items: center;
@@ -152,7 +152,7 @@ body {
   left: -250px;
   width: 250px;
   height: 100%;
-  background-color: #0282fa;
+  background-color: #fa0202;
   color: white;
   padding: 20px;
   transition: left 0.3s ease;
